@@ -1,55 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Biglietti dei Nonni</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biglietti dei Nonni</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f8f4e8; /* Marfil */
+    color: #1c2a4d; /* Azul índigo */
+    text-align: center;
+    position: relative;
+}
 
-    <link rel="stylesheet" href="styles.css">
+/* Marca de agua */
+body::before {
+    content: "";
+    background: url('Tierra.png') no-repeat center top;
+    background-size: 300px;
+    opacity: 0.15;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 300px;
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.subtitulo {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 22px;
+    border-bottom: 1px solid #1c2a4d;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+</style>
 </head>
+
 <body>
 
-    <div class="menu-card">
+<div class="container">
 
-        <!-- Marca de agua -->
-        <img src="Tierra.png" alt="Emblema Tierra"
-             class="watermark">
+<h1>Biglietti dei Nonni</h1>
+<p class="subtitulo">Cocina Casera & Tradicional</p>
 
-        <header>
-            <h1>Biglietti dei Nonni</h1>
-            <p class="tagline">Familiar</p>
-            <div class="decoracion"></div>
-        </header>
+<div class="section">
+<h2>Entrada</h2>
+<ul>
+<li>Sopa del día preparada al momento</li>
+</ul>
+</div>
 
-        <section>
-            <h2>Entradas</h2>
-            <ul>
-                <li>Sopa Poblana especial</li>
-                <li>Cremita de Zanahoria artesanal</li>
-            </ul>
-        </section>
+<div class="section">
+<h2>Segundo Platillo</h2>
+<ul>
+<li>A elegir entre:</li>
+<li>• Arroz rojo casero</li>
+<li>• Ensalada fresca de la casa</li>
+</ul>
+</div>
 
-        <section>
-            <h2>Plato Fuerte</h2>
-            <ul>
-                <li>Bistec Ranchero</li>
-                <li>Pechuga a la crema con tocino y elote</li>
-            </ul>
-        </section>
+<div class="section">
+<h2>Plato Fuerte</h2>
+<ul>
+<li>Guisado tradicional del día</li>
+<li>Carnes o pastas estilo familiar</li>
+</ul>
+</div>
 
-        <section>
-            <h2>Postres</h2>
-            <ul>
-                <li>Gelatina de Yogurt de Coco</li>
-            </ul>
-        </section>
+<div class="section">
+<h2>Postre</h2>
+<ul>
+<li>Postre casero del día</li>
+</ul>
+</div>
 
-        <div class="precio">
-            $85 MXN
-        </div>
+<div class="footer">
+<p>Hecho con cariño • Sabor de hogar • Precio accesible</p>
+</div>
 
-    </div>
+</div>
 
 </body>
 </html>
